@@ -1,8 +1,7 @@
 #include "main.h"
 /*
- * main - the main function
+ * main - Entry point
  * _putchar: print the alphabets putchar
- *
  * return: always 0 when successful
  */
 
