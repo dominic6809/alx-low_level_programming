@@ -1,9 +1,10 @@
 #include "main.h"
 
-/*
- * _putchar: print the alphabets putchar
+/**
  * main - Entry point
- * return: always 0 when successful
+ *
+ * Return: Always 0
+ *
  */
 
 int main(void)
