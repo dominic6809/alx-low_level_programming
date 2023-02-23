@@ -6,9 +6,9 @@
  * Return: 1 if true, 0 if false
  */
 
-int _isupper(int a)
+int _isupper(int c)
 {
-	if (a >= 65 && a <= 90)
+	if (c >= 65 && c <= 90)
 	{
 		return (1);
 	}
