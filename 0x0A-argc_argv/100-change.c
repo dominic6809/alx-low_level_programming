@@ -2,14 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <stdbool.h>
+#include <string.h>
 
 /**
  * coinConverter - Helper function that does all the mathematics
  * @i: Passed in variable from main for calculations
  * Return: The number of coins needed minimum for the passed in variable
  */
-
 int coinConverter(int i)
 {
 	int count = 0;
@@ -46,7 +45,6 @@ int coinConverter(int i)
  * @argv: Array name
  * Return: 0 if exactly 1 argument is passed into this program, 1 otherwise
  */
-
 int main(int argc, char *argv[])
 {
 	int i, coin;
