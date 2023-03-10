@@ -9,12 +9,13 @@
  *  @argv: An array of pointers to the arguments.
  *
  *  Return: If the number of arguments is not exactly one - 1.
- *           otherwise - 0.
+ *  otherwise - 0.
  */
 
 int main(int argc, char *argv[])
 {
 	int cents, coins = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -22,7 +23,6 @@ int main(int argc, char *argv[])
 	}
 
 	cents = atoi(argv[1]);
-
 	while (cents > 0)
 	{
 		coins++;
@@ -49,6 +49,5 @@ int main(int argc, char *argv[])
 		cents--;
 	}
 	printf("%d\n", coins);
-
 	return (0);
 }
