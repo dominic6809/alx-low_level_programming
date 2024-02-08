@@ -28,10 +28,6 @@ For further exploration of bit manipulation in C, consider referring to the foll
 - [C Programming Language Specification](https://en.cppreference.com/w/c/language)
 - [The C Programming Language by Brian Kernighan and Dennis Ritchie](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628)
 
-## License
-
-This repository is licensed under the [MIT License](LICENSE), which means you are free to use, modify, and distribute the code as you see fit. See the `LICENSE` file for more details.
-
 ## Disclaimer
 
 The content provided in this repository is for educational purposes only. While efforts have been made to ensure accuracy, the authors and contributors cannot be held liable for any errors or consequences arising from the use of this material.
