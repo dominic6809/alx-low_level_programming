@@ -9,8 +9,10 @@
 int string_length(const char *b)
 {
 	int index, string_length;
-	string_length=0;
-	if(b == 0)
+
+	string_length = 0;
+
+	if (b == 0)
 	{
 		return (string_length);
 	}
@@ -28,7 +30,9 @@ int string_length(const char *b)
 unsigned int power(int b, int xp)
 {
 	unsigned int total;
+
 	total = 1;
+
 	if (b < 0)
 	{
 		return (0);
@@ -64,7 +68,7 @@ unsigned int binary_to_unit(const char *b)
 		{
 			total += power(2, (slen - pos));
 		}
-		else if (b[pos] != '0 && b[pos] != '1'')
+		else if (b[pos] != '0' && b[pos] != '1')
 		{
 			return (0);
 		}
