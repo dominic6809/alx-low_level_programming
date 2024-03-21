@@ -11,9 +11,9 @@
  */
 void generate_key(const char *username, char *key)
 {
+
 	snprintf(key, 20, "KEY_%s", username);
 }
-
 /**
  * main - Main function
  * @argc: Argument count
@@ -27,8 +27,8 @@ int main(int argc, char *argv[])
 
 	if (argc != 2)
 	{
-		printf("Usage: %s username\n", argv[0]);
-		return (1);
+	printf("Usage: %s username\n", argv[0]);
+	return (1);
 	}
 
 	generate_key(argv[1], key);
