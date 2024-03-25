@@ -2,9 +2,9 @@
 #include "stdio.h"
 
 /**
- * _strstr - locates a substring
- * @haystack: the longer string to search
- * @needle: the substring to search for
+ * _strstr - function to locate a substring
+ * @haystack: longer string to search
+ * @needle: substring to be searched for
  * Return: string or NULL
  */
 
@@ -12,12 +12,12 @@ char *_strstr(char *haystack, char *needle)
 {
 	for (; *haystack != '\0'; haystack++)
 	{
-		char *o = haystack;
+		char *h = haystack;
 		char *t = needle;
 
-		while (*o == *t && *t != '\0')
+		while (*h == *t && *t != '\0')
 		{
-			o++;
+			h++;
 			t++;
 		}
 
