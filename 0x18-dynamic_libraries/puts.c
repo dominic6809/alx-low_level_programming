@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * _puts - Prints a string to stdout.
- * @s: Pointer to the string to print.
+ * _puts - prints a string to stdandard output.
+ * @s: ptr to the string to be printed.
+ * Return: sucess 0, -1 failure
  */
 void _puts(char *s)
 {
