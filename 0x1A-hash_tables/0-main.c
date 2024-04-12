@@ -4,9 +4,9 @@
 #include "hash_tables.h"
 
 /**
- * main - check the code for
+ * main - Entry point
  *
- * Return: Always EXIT_SUCCESS.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -14,5 +14,5 @@ int main(void)
 
     ht = hash_table_create(1024);
     printf("%p\n", (void *)ht);
-    return (EXIT_SUCCESS);
+    return (0);
 }
