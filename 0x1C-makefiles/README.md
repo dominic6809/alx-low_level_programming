@@ -45,7 +45,11 @@ Ensure that only updated source files are recompiled, optimizing the build proce
 ## Usage
 
 Build the executable: Run make or make all.
+
 Clean temporary files and the executable: Run make clean.
+
 Clean object files: Run make oclean.
+
 Fully clean the project: Run make fclean.
+
 Recompile all source files: Run make re.
