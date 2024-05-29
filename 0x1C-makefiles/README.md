@@ -17,18 +17,29 @@ Ensure that only updated source files are recompiled, optimizing the build proce
 - Executable Name: school
   
     Rules: all, clean, oclean, fclean, re
+  
     all: Builds the executable.
+  
     clean: Deletes the executable and all Emacs and Vim temporary files.
+  
     oclean: Deletes the object files.
+  
     fclean: Deletes the executable, object files, and all Emacs and Vim temporary files.
+  
     re: Forces recompilation of all source files.
+  
 - Variables: CC, SRC, OBJ, NAME, RM, CFLAGS
   
     CC: Compiler to be used.
+  
     SRC: Source files.
+  
     OBJ: Object files derived from source files.
+  
     NAME: Name of the executable.
+  
     RM: Program to delete files.
+  
     CFLAGS: Compiler flags (-Wall -Werror -Wextra -pedantic).
 
 ## Usage
