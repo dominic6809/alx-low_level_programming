@@ -50,24 +50,18 @@ int binary_search(int *array, size_t left, size_t right, int value)
  */
 int exponential_search(int *array, size_t size, int value)
 {
-    size_t bound = 1;
-    size_t left, right;
+	size_t i = 0, right;
 
-    if (array == NULL || size == 0)
-        return (-1);
+	if (array == NULL)
+		return (-1);
 
-    if (array[0] == value)
-        return (0);
+	if (array[0] != value)
+	{
+		for (i = 1; i < size && array[i] <= value; i = i * 2)
+			printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+	}
 
-    while (bound < size && array[bound] < value)
-    {
-        printf("Value checked array[%lu] = [%d]\n", bound, array[bound]);
-        bound *= 2;
-    }
-
-    left = bound / 2;
-    right = (bound < size) ? bound : size - 1;
-    printf("Value found between indexes [%lu] and [%lu]\n", left, right);
-
-    return binary_search(array, left, right, value);
+	right = i < size ? i : size - 1;
+	printf("Value found between indexes [%ld] and [%ld]\n", i / 2, right);
+	return (_binary_search(array, i / 2, right, value));
 }
