@@ -4,8 +4,7 @@
 
 /**
  * advanced_binary_recursive - Recursively searches for the first occurrence of a value
- *                             in a sorted array of integers using binary search.
- *
+ * in a sorted array of integers using binary search.
  * @array: A pointer to the first element of the array to search in.
  * @size: size of the array.
  * @value: The value to search for.
@@ -45,8 +44,7 @@ int advanced_binary_recursive(int *array, size_t size, int value)
 
 /**
  * advanced_binary - Searches for the first occurrence of a value in a sorted
- *                   array of integers using an advanced binary search algorithm.
- *
+ * array of integers using an advanced binary search algorithm
  * @array: A pointer to the first element of the array to search in.
  * @size: The number of elements in the array.
  * @value: The value to search for.
