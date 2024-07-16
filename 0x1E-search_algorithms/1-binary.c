@@ -1,4 +1,5 @@
 #include "search_algos.h"
+#include <stdio.h>
 
 /**
  * print_subarray - Prints the subarray currently being searched.
@@ -19,6 +20,7 @@ void print_subarray(int *array, size_t start, size_t end)
 			printf(", ");
 		else
 			printf("\n");
+
 		start++;
 	}
 }
@@ -36,35 +38,35 @@ void print_subarray(int *array, size_t start, size_t end)
  */
 int binary_search(int *array, size_t size, int value)
 {
-    size_t start = 0;
-    size_t end = size - 1;
-    size_t mid;
-    
-    if (array == NULL)
-    {
-        return (-1);
-    }
+	size_t start = 0;
+	size_t end = size - 1;
+	size_t mid;
 
-    while (start <= end)
-    {
-        print_subarray(array, start, end);
+	if (array == NULL || size == 0)
+	{
+		return (-1);
+	}
 
-        mid = start + (end - start) / 2;
-        
-        if (array[mid] == value)
-        {
-            return ((int)mid);  /* Return the index if the value is found */
-        }
-        else if (array[mid] < value)
-        {
-            start = mid + 1;  /* Move to the right subarray */
-        }
-        else
-        {
-            end = mid - 1;  /* Move to the left subarray */
-        }
-    }
+	while (start <= end)
+	{
+		print_subarray(array, start, end);
 
-    /* Return -1 if the value is not found */
-    return (-1);
+		mid = start + (end - start) / 2;
+
+		if (array[mid] == value)
+		{
+			return ((int)mid);  /* Return the index if the value is found */
+		}
+		else if (array[mid] < value)
+		{
+			start = mid + 1;  /* Move to the right subarray */
+		}
+		else
+		{
+			end = mid - 1;  /* Move to the left subarray */
+		}
+	}
+
+	/* Return -1 if the value is not found */
+	return (-1);
 }
