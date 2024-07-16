@@ -3,8 +3,7 @@
 #include "search_algos.h"
 
 /**
- * advanced_binary_recursive - Recursively searches for the first occurrence of a value
- * in a sorted array of integers using binary search.
+ * advanced_binary_recursive - searches for the first occurrence of a value
  * @array: A pointer to the first element of the array to search in.
  * @size: size of the array.
  * @value: The value to search for.
