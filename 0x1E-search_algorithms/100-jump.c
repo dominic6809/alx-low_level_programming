@@ -4,7 +4,7 @@
 
 /**
  * jump_search - Searches for a value in a sorted singly linked list of integers
- *               using the Jump search algorithm.
+ * using the Jump search algorithm.
  *
  * @array: A pointer to the first element of the array to search in.
  * @size: The number of elements in the array.
